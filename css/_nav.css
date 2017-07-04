@@ -7,3 +7,6 @@
 .navbar-header > .site-logo img {
   width: 100%;
 }
+.navbar-header ul li {
+  display: inline-block;
+}
