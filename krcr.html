@@ -9,6 +9,7 @@
 	
 	    <!-- Bootstrap -->
 	    <link href="css/bootstrap.css" rel="stylesheet">	
+	    <link href="css/font-awesome/font-awesome.css" rel="stylesheet">
 	    <link href="css/_common.css" rel="stylesheet">
 	    <link href="css/_nav.css" rel="stylesheet">
 		<meta charset="UTF-8">
@@ -54,7 +55,7 @@
 			    
 			
 			    <!-- Collect the nav links, forms, and other content for toggling -->
-			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			    <div class="collapse navbar-collapse pull-left" id="bs-example-navbar-collapse-1">
 			      <ul class="nav navbar-nav">
 			        <li class="active"><a href="#">Link</a></li>
 			        <li><a href="#">Link</a></li>
@@ -71,12 +72,25 @@
 			          </ul>
 			        </li>
 			      </ul>
-
-
 			    </div><!-- /.navbar-collapse -->
+			    
+			    <div class="dropdown pull-right">
+			    	<a class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown">
+			        	<span class="fa fa-search"></span>
+			        </a>
+			    	<form id="drop-search" data-dropdown-content="" class="dropdown-menu" style="position: absolute; left: 0px; top: 40px;">
+			    		<input type="text" placeholder="Site Search..." id="site-search__field">
+			    		<a href="#" class="button" id="site-search__button">Search</a>
+			    	</form>
+			    </div>
+			    
 			  </div><!-- /.container -->
 			</nav>
 		</header>
+		
+		<div>
+
+		</div>
 		
 	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
