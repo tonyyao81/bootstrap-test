@@ -16,13 +16,21 @@ ul,ul ul {
     margin-top: 0; // remove the gap so it doesn't close 
  }
  
- 
- .crop-photo img {
-    height: auto;
-    width: 100%;
-    display: block;
-    visibility: hidden;
+ .crop-photo {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -ms-background-position-x: center;
+    -ms-background-position-y: center;
+    
+    img {
+        height: auto;
+        width: 100%;
+        display: block;
+        visibility: hidden;
+    }
 }
+
  
 
 @font-face {

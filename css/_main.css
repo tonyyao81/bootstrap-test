@@ -6728,6 +6728,13 @@ ul ul {
   display: block;
   margin-top: 0;
 }
+.crop-photo {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -ms-background-position-x: center;
+  -ms-background-position-y: center;
+}
 .crop-photo img {
   height: auto;
   width: 100%;
