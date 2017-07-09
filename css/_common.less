@@ -1,4 +1,40 @@
+
+body {
+    font-family: "Lato",
+    Arial,
+    sans-serif;
+    font-weight: 700;
+}
+
 ul,ul ul {
     list-style: none;
     margin: 0
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close 
+ }
+ 
+ 
+ .crop-photo img {
+    height: auto;
+    width: 100%;
+    display: block;
+    visibility: hidden;
+}
+ 
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Lato Regular"),local("Lato-Regular"),url(https://fonts.gstatic.com/s/lato/v13/v0SdcGFAl2aezM9Vq_aFTQ.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local("Lato Bold"),local("Lato-Bold"),url(https://fonts.gstatic.com/s/lato/v13/DvlFBScY1r-FMtZSYIYoYw.ttf) format("truetype")
 }

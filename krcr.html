@@ -8,15 +8,40 @@
 	    <title>Bootstrap 101 Template</title>
 	
 	    <!-- Bootstrap -->
-	    <link href="css/bootstrap.css" rel="stylesheet">	
+	    <link href="css/_main.css" rel="stylesheet">	
 	    <link href="css/font-awesome/font-awesome.css" rel="stylesheet">
-	    <link href="css/_common.css" rel="stylesheet">
-	    <link href="css/_nav.css" rel="stylesheet">
 		<meta charset="UTF-8">
 		<title></title>
 	</head>
 	<body>
 		<header>
+			<div id="site-header">
+				<div class="site-logo">
+					<a href="/" title="Go to KRCR">
+						<div class="site-logo-wrapper" style="background:url(http://static.lakana.com/bmg-krcrtv-media-us-east-1/photo/2016/07/08/logo%202.0_1467997923675_2913838_ver1.0.png)"></div>
+					</a>
+				</div>
+				<ul class="nav-weather pull-right">
+					<li>
+						<a href="http://www.krcrtv.com/pt/weather">
+							<h5 class="region">Redding</h5>
+							<h4 class="forecast"><i class="lwi lwi-night-clear small"></i>68°</h4>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.krcrtv.com/pt/weather">
+							<h5 class="region">Chico</h5>
+							<h4 class="forecast"><i class="lwi lwi-night-clear small"></i>66°</h4>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.krcrtv.com/pt/weather">
+							<h5 class="region">Red Bluff</h5>
+							<h4 class="forecast"><i class="lwi lwi-night-clear small"></i>68°</h4>
+						</a>
+					</li>
+				</ul>
+			</div>
 			<nav class="navbar navbar-default">
 			  <div class="container">
 			    <!-- Brand and toggle get grouped for better mobile display -->
@@ -26,69 +51,146 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			      </button>
-			      <div class="site-logo pull-left">
-					<a href="/" title="Go to KRCR">
-						<img src="http://static.lakana.com/bmg-krcrtv-media-us-east-1/photo/2016/07/08/logo%202.0_1467997923675_2913838_ver1.0.png" alt="KRCR">
-					</a>
-				  </div>
-				  	<ul class="nav-weather pull-right">
-						<li>
-							<a href="http://www.krcrtv.com/pt/weather">
-								<h5 class="region">Redding</h5>
-								<h4 class="forecast"><i class="lwi lwi-night-clear small"></i>68°</h4>
-							</a>
-						</li>
-						<li>
-							<a href="http://www.krcrtv.com/pt/weather">
-								<h5 class="region">Chico</h5>
-								<h4 class="forecast"><i class="lwi lwi-night-clear small"></i>66°</h4>
-							</a>
-						</li>
-						<li>
-							<a href="http://www.krcrtv.com/pt/weather">
-								<h5 class="region">Red Bluff</h5>
-								<h4 class="forecast"><i class="lwi lwi-night-clear small"></i>68°</h4>
-							</a>
-						</li>
-	                </ul>
+			      
 			    </div>
 			    
 			
 			    <!-- Collect the nav links, forms, and other content for toggling -->
-			    <div class="collapse navbar-collapse pull-left" id="bs-example-navbar-collapse-1">
-			      <ul class="nav navbar-nav">
-			        <li class="active"><a href="#">Link</a></li>
-			        <li><a href="#">Link</a></li>
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav pull-left">
+			        <li class="active"><a href="#">Home</a></li>
 			        <li class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >Dropdown <span class="caret"></span></a>
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >News<span class="caret"></span></a>
 			          <ul class="dropdown-menu">
-			            <li><a href="#">Action</a></li>
-			            <li><a href="#">Another action</a></li>
-			            <li><a href="#">Something else here</a></li>
-			            <li role="separator" class="divider"></li>
-			            <li><a href="#">Separated link</a></li>
-			            <li role="separator" class="divider"></li>
-			            <li><a href="#">One more separated link</a></li>
+			            <li><a href="#">Local News</a></li>
+			            <li><a href="#">National News</a></li>
+			            <li><a href="#">Politics</a></li>
 			          </ul>
 			        </li>
+			        <li class="active">
+			        	<a href="#">Local News</a>
+			        </li>
+			        <li class="active">
+			        	<a href="#">Weather</a>
+			        </li>
 			      </ul>
+			      <div class="dropdown pull-right">
+			      	<a class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown">
+			      		<span class="fa fa-search"></span>
+			      	</a>
+			      	<form id="drop-search" data-dropdown-content="" class="dropdown-menu" style="position: absolute; left: 0px; top: 40px;">
+			      		<input type="text" placeholder="Site Search..." id="site-search__field">
+			      		<a href="#" class="button" id="site-search__button">Search</a>
+			      	</form>
+			      </div>
 			    </div><!-- /.navbar-collapse -->
 			    
-			    <div class="dropdown pull-right">
-			    	<a class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown">
-			        	<span class="fa fa-search"></span>
-			        </a>
-			    	<form id="drop-search" data-dropdown-content="" class="dropdown-menu" style="position: absolute; left: 0px; top: 40px;">
-			    		<input type="text" placeholder="Site Search..." id="site-search__field">
-			    		<a href="#" class="button" id="site-search__button">Search</a>
-			    	</form>
-			    </div>
 			    
 			  </div><!-- /.container -->
 			</nav>
 		</header>
 		
-		<div>
+		<div id="main" class="container">
+			<div class="row">
+				<div class="col-lg-8">
+					<section class="module mod-carousel single">
+						<header class="mod-header">
+							<h2>Latest Stories</h2>
+						</header>
+						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<div class="image-wrapper">
+										<a href="/act" class="meta category overlay">Wildfire</a>
+										<a href="/weather/wildfire/additional-evacuations-ordered-in-wall-fire-1700-acres-burned/581475569">
+											<figure class="crop-photo image add-play-icon lazyOwl" style="display: block; background-image: url(&quot;http://static.lakana.com/bmg-krcrtv-media-us-east-1/photo/2017/07/08/wall%20fire%20sat%20morning_1499541057708_7399855_ver1.0_640_360.JPG&quot;);">
+												<img src="http://www.krcrtv.com/bmg-main-theme/images/color-schemes/krcr/placeholder/placeholder-16x9.jpg" alt="New evacuations ordered in Wall Fire, 2,700 acres burned">
+											</figure>
+										</a>
+										<small class="copyright"></small>
+									</div>
+									<div class="carousel-caption">
+										<h4 class="headline">
+									                                  <span class="label blue">Updated</span>
+									                               <a href="/weather/wildfire/additional-evacuations-ordered-in-wall-fire-1700-acres-burned/581475569"> New evacuations ordered in Wall Fire, 2,700 acres burned
+									                                                    <i class="fa fa-play-circle icon"></i>
+									                                        </a>
+									                        </h4>
+										<p class="">
+											The Wall Fire, which is burning north of Bangor, in Butte County has burned 2,700 acres and is 20 percent contained as of 7:30 p.m.
+										</p>
+										<a href="/weather/wildfire/additional-evacuations-ordered-in-wall-fire-1700-acres-burned/581475569">Read More »</a>
+									</div>
+								</div>
+							</div>
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-example-generic" data-slide-to="0" class="active">
+									<div class="image-wrapper">
+										<a href="/act" class="meta category overlay">Wildfire</a>
+										<a href="/weather/wildfire/additional-evacuations-ordered-in-wall-fire-1700-acres-burned/581475569">
+											<figure class="crop-photo image add-play-icon lazyOwl" style="display: block; background-image: url('http://static.lakana.com/bmg-krcrtv-media-us-east-1/photo/2017/07/08/wall%20fire%20sat%20morning_1499541057708_7399855_ver1.0_320_180.JPG');">
+												<img src="http://www.krcrtv.com/bmg-main-theme/images/color-schemes/krcr/placeholder/placeholder-16x9.jpg" alt="New evacuations ordered in Wall Fire, 2,700 acres burned">
+											</figure>
+										</a>
+										<small class="copyright"></small>
+									</div>
+								</li>
+								<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+							</ol>
+							<!-- Controls -->
+							<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							</a>
+							<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							</a>
+						</div>
+					</section>
+				</div>
+				<div class="col-lg-4">
+					<section class="module mod-carousel block-grid border no-carousel-buttons">
+						<header class="mod-header">
+							<h2>Today's Weather</h2>
+						</header>
+						<div class="mod-content">
+							<div id="amino-carousel-47360" class="owl-carousel owl-theme using3d" style="opacity: 1; display: block;">
+					
+								<div class="owl-wrapper-outer">
+									<div class="owl-wrapper" style="width: 670px; left: 0px; display: block; transition: all 0ms ease; transform: translate3d(0px, 0px, 0px);">
+										<div class="owl-item" style="width: 335px;">
+											<div class="item">
+												<div class="image-wrapper">
+													<a href="/weather/weather-forecast-slight-breeze-and-hot-to-finish-weekend/582077656">
+														<figure class="crop-photo image add-play-icon lazyOwl" style="display: block; background-image: url(&quot;http://static.lakana.com/bmg-krcrtv-media-us-east-1/photo/2017/07/08/Web%207-8_1499559719021_7399900_ver1.0_320_180.JPG&quot;);">
+															<img src="http://www.krcrtv.com/bmg-main-theme/images/color-schemes/krcr/placeholder/placeholder-16x9.jpg" alt="Weather Forecast: Slight breeze and hot to finish weekend">
+														</figure>
+														<h4 class="headline overlay">
+					                            Weather Forecast: Slight breeze and hot to finish weekend
+					                        </h4>
+													</a>
+													<small class="copyright">Copyright 2016 by KRCRTV.com All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</small>
+												</div>
+					
+												<div class="headline-wrapper ">
+													<p class="no-wrap-ellipsis">
+														Conditions are cooling slightly across the Northstate to wrap up the weekend but will remain very warm for this time of year.
+													</p>
+													<a href="/weather/weather-forecast-slight-breeze-and-hot-to-finish-weekend/582077656" class="meta read-more">Read More »</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</section>
+				</div>
+			</div>
 
 		</div>
 		
